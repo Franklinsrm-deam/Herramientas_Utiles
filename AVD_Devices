@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog de Herramientas para Solucionar Problemas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-color: #f8f9fa;
+      padding: 2rem;
+      text-align: center;
+    }
+    .content-image {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Soluciones Inteligentes: Blog de Herramientas Tecnológicas</h1>
+    <p>Descubre las mejores herramientas para resolver problemas de forma eficiente</p>
+    <div>
+      <a href="#" class="btn btn-primary">Compartir en Facebook</a>
+      <a href="#" class="btn btn-info">Compartir en Twitter</a>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#contenido">Contenido</a></li>
+          <li class="nav-item"><a class="nav-link" href="#institucional">Páginas Institucionales</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fuentes">Fuentes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mt-4">
+    <section id="contenido">
+      <h2>Herramientas Tecnológicas para la Solución de Problemas</h2>
+      <p>En este blog presentamos diferentes herramientas que pueden utilizarse para analizar y resolver problemas en diversos contextos, desde software de análisis hasta metodologías de pensamiento crítico.</p>
+      <img src="https://via.placeholder.com/800x400" alt="Herramienta tecnológica" class="content-image my-3">
+
+      <h3>Ejemplos de herramientas</h3>
+      <ul>
+        <li>Diagramas de flujo para análisis de procesos</li>
+        <li>Software como Trello y Notion para organización</li>
+        <li>Mapas mentales digitales (MindMeister, XMind)</li>
+        <li>Inteligencia Artificial para análisis de datos</li>
+      </ul>
+    </section>
+
+    <section id="institucional" class="mt-5">
+      <h2>Páginas Institucionales</h2>
+      <ul>
+        <li><a href="https://www.unal.edu.co/" target="_blank">Universidad Nacional de Colombia</a></li>
+        <li><a href="https://www.mintic.gov.co/" target="_blank">Ministerio TIC Colombia</a></li>
+        <li><a href="https://www.colnodo.apc.org/" target="_blank">Colnodo</a></li>
+      </ul>
+    </section>
+
+    <section id="fuentes" class="mt-5">
+      <h2>Fuentes de Información</h2>
+      <ul>
+        <li>https://www.trello.com</li>
+        <li>https://www.notion.so</li>
+        <li>https://xmind.app</li>
+        <li>https://chat.openai.com</li>
+      </ul>
+    </section>
+
+    <section id="integrantes" class="mt-5">
+      <h2>Integrantes del Grupo</h2>
+      <ul>
+        <li>Yilmer Caleño</li>
+        <li>Franklin Rincón</li>
+        <li>Daniela Ballena</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    <p>&copy; 2025 Blog Educativo - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JS para interacción dinámica
+    document.querySelectorAll('a.btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('Función de compartir próximamente disponible.');
+      });
+    });
+  </script>
+</body>
+</html>

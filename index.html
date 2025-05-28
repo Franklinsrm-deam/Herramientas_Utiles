@@ -11,10 +11,13 @@
       scroll-behavior: smooth;
     }
     .hero {
-      background-color: #e8eaeb;
-      padding: 2rem;
-      text-align: center;
-    }
+            background: linear-gradient(135deg, #6B73FF 0%,#000DFF 100%);
+            padding: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          }
     .content-image {
       max-width: 100%;
       height: auto;
@@ -30,6 +33,76 @@
       height: auto;
     }
   }
+          .section-spacing {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+          } 
+          .fade-in {
+            animation: fadeIn 1s ease-in;
+          }
+  
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }  
+          .tool-card {
+            transition: transform 0.3s ease;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+          }
+         .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+          } 
+
+          .tool-card2 {
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            border-radius: 6px;
+          }
+          .tool-card2:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(240, 240, 240, 0.103);
+          } 
+          .tool-card3 {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+          }
+    .custom-image3 {
+    width: 2000px;
+    height: 600px;
+    object-fit: contain;
+  }
+  @media (max-width: 768px) {
+    .custom-image3 {
+      width: 100%;
+      height: auto;
+    }
+}
+.custom-image2 {
+    width:50px;
+    height: 60px;
+    object-fit: contain;
+  }
+  @media (max-width: 768px) {
+    .custom-image2 {
+      width: 100%;
+      height: auto;
+    }
+}
+.tool-card4 {
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            border-radius: 6px;
+          }
+          .tool-card4:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px #c3f3ff56;
+          } 
   </style>
 </head>
 <body>
@@ -39,44 +112,55 @@
     <h1>Soluciones Inteligentes: Blog de Herramientas Tecnológicas</h1>
     <p>Descubre las mejores herramientas para resolver problemas de forma eficiente</p>
     <div>
-      <a href="#" class="btn btn-primary">Compartir en Facebook</a>
-      <a href="#" class="btn btn-info">Compartir en Twitter</a>
-    </div>
+        <a href="#" class="btn btn-primary me-2 rounded-pill tool-card4">
+          <i class="bi bi-facebook me-2"></i>Compartir en Facebook
+        </a>
+        <a href="#" class="btn btn-dark rounded-pill tool-card4 text-white">
+          <i class="bi bi-twitter me-2"></i>Compartir en Twitter
+        </a>
+        <a href="#" class="btn btn-danger rounded-pill tool-card4 text-white">
+          <i class="bi bi-instagram me-2"></i>Compartir en instagram
+        </a>
+      </div>
   </header>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#ini">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contenido">Contenido</a></li>
-          <li class="nav-item"><a class="nav-link" href="#institucional">Páginas Institucionales</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fuentes">Fuentes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link " href="#ini">Inicio</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#contenido">Contenido</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#diagramas">Diagramas de flujo</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#Trello">Trello</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#Notion">Notion</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#mm">Mapas Mentales</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#ia">Inteligencia Artificial</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#integrantes">Integrantes</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#institucional">Páginas Institucionales</a></li>
+          <li class="nav-item tool-card2"><a class="nav-link" href="#fuentes">Fuentes</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main class="container mt-5">
-    <section id="contenido" class="justify-content-center">
-      <h2 class="text-center"> Herramientas que todo Universitario Usa</h2>
+    <section id="contenido" class="justify-content-center section-spacing">
+      <h2 class="text-center">Herramientas Imprescindibles para Todo Universitario</h2>
       <br>
       <p>En este blog presentamos diferentes herramientas utilizadas por la mayoría de estudiantes para transformar su manera de aprender y trabajar. Estas soluciones ayudan a organizar ideas complejas, gestionar tiempos de estudio, colaborar en equipo y simplificar tareas repetitivas. Desde técnicas visuales hasta sistemas inteligentes, cada opción está pensada para potenciar la productividad y reducir el estrés académico. Lo mejor es que se adaptan a distintos estilos de aprendizaje, permitiendo combinar creatividad con eficiencia. ¡Aquí descubrirás métodos probados para estudiar más y mejor, sin perder tiempo!</p>
-      <img src="https://via.placeholder.com/800x400" alt="Herramienta tecnológica" class="content-image my-3">
-        <div class="container-fluid p-5 bg-secondary text-center text-light">
+      <img src="Pics/uni.jpg" alt="Herramienta tecnológica" class="img-fluid m-4 custom-image3 " >
+        <div class="container-fluid p-5 bg-primary text-center text-light">
             <div class="row">
                  <div class="col-12 bg-success p-4 fs-1">
                     <h3>Ejemplos de herramientas</h3>
                  </div>
             </div>
-            <div class="row ">
+            <div class="row " id="diagramas">
                 <div class="col-12 bg-black p-2 g-1">
                      <div class="row ">
-                        <div class="col-sm-12 p-3 g-2 bg-light text-black fs-3 fs-md-2 fs-lg-1">
+                        <div class="col-sm-12 p-3 g-2 bg-light text-black fs-3 fs-md-2 fs-lg-1 tool-card3">
                     <h4>Diagramas de flujo para análisis de procesos</h4>
                     </div>
-                    <div class="col-sm-12 col-md-7 p-3   g-3 bg-light text-black  text-start fs-Auto ">
+                    <div class="col-sm-12 col-md-7 p-3   g-3 bg-light text-black  text-start fs-Auto tool-card3 ">
                         <br>
                         <p>Los diagramas de flujo sirven para entender y mejorar procesos de manera sencilla.
                             Primero, dibujas cada paso de una tarea (como aprobar un pedido o atender un cliente) 
@@ -86,109 +170,218 @@
                             Finalmente, pruebas el nuevo método y verificas si se resolvió el problema. Es como hacer un "mapa" 
                             del trabajo para encontrar atajos y hacerlo más rápido.</p>
                     </div>
-                    <div class="col-sm-12 col-md-5 p-3   g-3 bg-light text-black">
+                    <div class="col-sm-12 col-md-5 p-3   g-3 bg-light text-black tool-card3">
                     <img src="Pics/Workflow-Diagram.webp" alt="Herramienta tecnológica" class="img-fluid custom-image">
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card" >
+                    <a href="https://www.lucidchart.com/pages/es" target="_blank">
+                        <img src="Pics/lucidchart-logo.png" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                    </a>
+                    <h5>
+                        Lucidchart
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://miro.com/es/" target="_blank">
+                            <img src="Pics/miro.png" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                       Miro 
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://www.drawio.com/" target="_blank">
+                            <img src="Pics/draw.c22d8e97-4d44-4304-9bd2-55f9d29c0f82" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                        Draw.io
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://whimsical.com/" target="_blank">
+                            <img src="Pics/whimsical4056.jpg" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                        Whimsical
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://www.celonis.com/es/" target="_blank">
+                            <img src="Pics/Celonis.png" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                        Celonis
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://help.nintex.com/en-US/kryonrpa/20.09/default.htm" target="_blank">
+                            <img src="Pics/kryon_logo.jpg" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                        Kryon RPA
+                    </h5>
                     </div>
                 </div>
                 </div>
                 <div class="col-12  p-2 g-4">
                      <div class="row ">
-                            <div class="col-md-12 col-lg-6 bg-primary p-2 px-2">
-                                 <div class="row ">
-                                    <div class="col-sm-12 p-3 g-2 bg-light text-black">
+                            <div class="col-md-12 col-lg-6 bg-info p-2 px-2 tool-card3">
+                                 <div class="row " id="Trello">
+                                    <div class="col-sm-12 p-3 g-2 bg-light text-black tool-card3">
                                         <h4>Trello</h4>
                                     </div>
-                                    <div class="col-12  p-3 g-2 bg-light text-black text-start fs-Auto">
-                                        <img src="Pics/Trello-Emblema.png" alt="Herramienta tecnológica" class="img-fluid custom-image">
+                                    <div class="col-12  p-3 g-2 bg-light text-black text-start fs-Auto tool-card">
+                                        <a href="https://trello.com/es" target="_blank">
+                                            <img src="Pics/Trello-Emblema.png" alt="Herramienta tecnológica" class="img-fluid custom-image">
+                                        </a>
+                                        
                                     </div>
-                                    <div class="col-12  p-3 g-3 bg-light text-black text-start fs-Auto">
+                                    <div class="col-12  p-3 g-3 bg-light text-black text-start fs-Auto tool-card3">
                                         <p>Trello sirve para organizar tareas como si fuera un tablero con post-it digitales. Creas columnas (como "Por hacer", "En progreso" y "Listo") y vas moviendo tarjetas con tus tareas entre ellas. Puedes agregar fechas, quién las hace y checklist para dividir trabajos grandes. Es perfecto para ver todo rápido, trabajar en equipo sin complicaciones y no olvidar nada. Ejemplo: Lo usan desde equipos de trabajo hasta amas de casa para planificar compras o proyectos simples.
                                         </p>
                                     </div>
                                  </div>
                             </div>
-                            <div class="col-md-12 col-lg-6 bg-warning p-2">
-                                <div class="row ">
-                                    <div class="col-sm-12 p-3 g-2 bg-light text-black">
+                            <div class="col-md-12 col-lg-6 bg-warning p-2 tool-card3">
+                                <div class="row " id="Notion">
+                                    <div class="col-sm-12 p-3 g-2 bg-light text-black tool-card3">
                                         <h4>Notion</h4>
                                     </div>
-                                    <div class="col-12  p-3 g-2 bg-light text-black">
-                                        <img src="Pics/notion.webp" alt="Herramienta tecnológica" class="img-fluid custom-image">
+                                    <div class="col-12  p-3 g-2 bg-light text-black tool-card">
+                                        <a href="https://www.notion.com/es" target="_blank">
+                                            <img src="Pics/notion.webp" alt="Herramienta tecnológica" class="img-fluid custom-image">
+                                        </a>
+                                        
                                     </div>
-                                    <div class="col-12  p-3 g-3 bg-light text-black text-start fs-Auto">
+                                    <div class="col-12  p-3 g-3 bg-light text-black text-start fs-Auto tool-card3">
                                         <p>Notion es como un cuaderno mágico donde puedes organizar TODO. Sirve para crear listas de tareas, bases de datos, notas y hasta calendarios, todo en un solo lugar. Lo bueno es que puedes personalizarlo como quieras: haz una tabla para tus pendientes, un tablero visual como Trello, o incluso guardar documentos importantes. Es ideal para proyectos complejos, estudiar o llevar tu vida personal ordenada. Ejemplo: Lo usan desde estudiantes para apuntes hasta empresas para gestionar equipos.</p>
                                     </div>
                                  </div>
                             </div>
                         </div>
                 </div>
-                <div class="col-sm-12 p-3 g-4 bg-light text-black">
-                    <h4>Mapas mentales </h4>
+                <div class="col-sm-12 p-3 g-4 bg-light text-black tool-card3" id="mm">
+                    <h4>Mapas Mentales </h4>
                 </div>
-                <div class="col-sm-12 col-md-6  p-3 g-2 bg-light text-black text-start fs-Auto">
+                <div class="col-sm-12 col-md-6  p-3  bg-light text-black text-start fs-Auto tool-card3">
                     <img src="Pics/images.jpg" alt="Herramienta tecnológica" class="img-fluid custom-image">
                 </div>
-                <div class="col-sm-12 col-md-6  p-3 g-2 bg-light text-black text-start fs-Auto">
+                <div class="col-sm-12 col-md-6  p-3 bg-light text-black text-start fs-Auto tool-card3">
                     <p>Los mapas mentales son como dibujos que organizan tus ideas alrededor de un tema central, usando ramas para desglosar tareas, ideas o pasos. En lugar de listas aburridas, ves todo visualmente: lo importante va en el centro y los detalles se ramifican. Así divides proyectos grandes en partes pequeñas, encuentras conexiones entre ideas y planificas más rápido. Por ejemplo, si tienes que organizar un viaje, pones "Viaje" en el centro y ramificas con "vuelos", "hoteles", "itinerario", etc. Es útil para no olvidar nada y resolver cosas sin perder tiempo.</p>
                 </div>
-                <div class="col-sm-12 p-3 g-4 bg-light text-black">
+                <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                    <a href="https://www.mindmeister.com/es" target="_blank">
+                        <img src="Pics/MindMeister.png" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                    </a>
+                    
+                    <h5>
+                        MindMeister
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://xmind.app/" target="_blank">
+                            <img src="Pics/XMind.png" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                       XMind  
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://www.ayoa.com/" target="_blank">
+                            <img src="Pics/Ayoa.png" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                        Ayoa
+                    </h5>
+                    </div>
+                <div class="col-sm-12 p-3 g-4 bg-light text-black tool-card3" id="ia">
                     <h4>Inteligencia Artificial</h4>
                 </div>
-                <div class="col-sm-12 col-md-6  p-3 g-2 bg-light text-black text-start fs-Auto">
+                <div class="col-sm-12 col-md-6  p-3 g-2 bg-light text-black text-start fs-Auto tool-card3">
                     <p>La Inteligencia Artificial (IA) te ayuda a resolver tareas más rápido automatizando cosas repetitivas, organizando información y dando respuestas instantáneas. Por ejemplo, puede responder correos por ti, resumir documentos largos en segundos, crear horarios optimizados o incluso analizar datos complicados sin que tengas que hacerlo manualmente. Plataformas como ChatGPT, Copilot o herramientas de análisis de datos usan IA para ahorrarte tiempo y esfuerzo. La clave es usarla como un "asistente inteligente" que simplifica el trabajo aburrido, para que tú te enfoques en lo importante.</p>
                 </div>
-                <div class="col-sm-12 col-md-6  p-3 g-2 bg-light text-black">
+                <div class="col-sm-12 col-md-6  p-3 g-2 bg-light text-black tool-card3">
                     <img src="Pics/inteligencia-artificial-conceptos-basicos-y-aplicaciones-actuales-1.png" alt="Herramienta tecnológica" class="img-fluid custom-image">
                 </div>
+                <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                    <a href="https://allenai.org/olmo" target="_blank">
+                        <img src="Pics/OLMo.png" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                    </a>
+                    
+                    <h5>
+                        OLMo
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://www.llama.com/" target="_blank">
+                            <img src="Pics/Llama 3.jpg" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                       Llama 3 
+                    </h5>
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3   g-3 bg-light text-black tool-card">
+                        <a href="https://falconllm.tii.ae/" target="_blank">
+                            <img src="Pics/Falcon 180B.webp" alt="Herramienta tecnológica" class="img-fluid custom-image2">
+                        </a>
+                    
+                    <h5>
+                        Falcon 180B
+                    </h5>
+                    </div>
                  
             </div>
     </div>
     </section>
 
-    <section id="institucional" class="mt-5">
-      <h2>Páginas Institucionales</h2>
-      <ul>
-        <li><a href="https://www.unal.edu.co/" target="_blank">Universidad Nacional de Colombia</a></li>
-        <li><a href="https://www.mintic.gov.co/" target="_blank">Ministerio TIC Colombia</a></li>
-        <li><a href="https://www.colnodo.apc.org/" target="_blank">Colnodo</a></li>
-      </ul>
-    </section>
-
-    <section id="fuentes" class="mt-5">
-      <h2>Fuentes de Información</h2>
-      <ul>
-        <li>https://www.trello.com</li>
-        <li>https://www.notion.so</li>
-        <li>https://xmind.app</li>
-        <li>https://chat.openai.com</li>
-      </ul>
-    </section>
-
-    <section id="integrantes" class="mt-5">
-      <h2>Integrantes del Grupo</h2>
-      <ul>
-        <li>Yilmer Caleño</li>
-        <li>Franklin Rincón</li>
-        <li>Daniela Ballena</li>
-      </ul>
+    <section id="integrantes" class="mt-6 section-spacing ">
+      <div class="container p-4 bg-success overflow-hidden text-center ">
+        <h2 class="text-light">Integrantes y/o Colaboradores</h2>
+    <div class="row p-4 gx-2 justify-content-center align-items-center text-center ">
+      <div class="col-sm-12 col-md-4 mb-3 mb-md-0 p-2 bg-light border-end tool-card">
+          <img src="Pics/raccconn.jpg" alt="Dani" class="img-fluid rounded-circle" style="max-height: 100px;">
+          <h2>Daniela Stefany Ballen</h2>
+          <h5>Estudiante de Ingenieria Mecatronica</h5>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-3 mb-md-0  p-2 bg-light border-end tool-card">
+        <img src="Pics/coco.webp" alt="Frank" class="img-fluid rounded-circle" style="max-height: 100px;">
+        <h2>Franklin Stiven Rincon </h2>
+        <h5>Estudiante de Ingenieria Mecatronica</h5>
+      </div>
+      <div class="col-sm-12 col-md-4 mb-3 mb-md-0 p-2 bg-light border-end tool-card">
+        <img src="Pics/lolo.avif" alt="yilme" class="img-fluid rounded-circle" style="max-height: 100px;">
+          <h2>Yilmer Caleño pineda</h2>
+          <h5>Estudiante de Ingenieria Mecatronica</h5>
+      </div>
+    </div>
+  </div>
       </section>
 
-    <section class="bg-light py-4">
-  <div class="container">
+    <section class=" py-4">
+  <div class="container text-center" id="institucional">
+    <h2>Páginas Institucionales</h2>
     <div class="row justify-content-center align-items-center text-center">
-      <div class="col-6 col-md-4 mb-3 mb-md-0">
+      <div class="col-6 col-md-4 mb-3 mb-md-0 g-2 tool-card2">
         <a href="https://www.ucundinamarca.edu.co/" target="_blank">
-          <img src="c:\xampp\htdocs\YILMER_CALEÑO\BOOTSTRAP - copia\logo-2024.png" alt="ucundinamarca" class="img-fluid" style="max-height: 40px;">
+          <img src="Pics/Logo_Universidad_de_Cundinamarca.png" alt="ucundinamarca" class="img-fluid" style="max-height: 80px;">
         </a>
       </div>
-      <div class="col-6 col-md-4 mb-3 mb-md-0">
-        <a href="https://www.mintic.gov.co/" target="_blank">
-          <img src="c:\xampp\htdocs\YILMER_CALEÑO\BOOTSTRAP - copia\logo_mintic_24_dark.svg" alt="MinTIC" class="img-fluid" style="max-height: 40px;">
+      <div class="col-6 col-md-4 mb-3 mb-md-0 g-2 tool-card2">
+        <a href="https://getbootstrap.com/" target="_blank">
+          <img src="Pics/DRUiMyM.png" alt="MinTIC" class="img-fluid" style="max-height: 100px;">
         </a>
       </div>
-      <div class="col-6 col-md-4">
-        <a href="https://www.colnodo.apc.org/" target="_blank">
-          <img src="c:\xampp\htdocs\YILMER_CALEÑO\BOOTSTRAP - copia\logoColnodo30principal.png" alt="Colnodo" class="img-fluid" style="max-height: 40px;">
+      <div class="col-6 col-md-4 g-2 tool-card2">
+        <a href="https://github.com/" target="_blank">
+          <img src="Pics/1_dDNpLKu_oTLzStsDTnkJ-g.png" alt="Colnodo" class="img-fluid" style="max-height: 70px;">
         </a>
       </div>
     </div>
@@ -201,9 +394,9 @@
     
   </main>
 <footer class="bg-dark text-white mt-5 pt-4 pb-3 border-top border-secondary">
-  <div class="container">
+  <div class="container " id="fuentes">
     <div class="row text-start">
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-4">
         <h6 class="fw-bold text-uppercase">fuentes de informacion</h6>
         <ul class="list-unstyled">
           <li><a href="#" class="text_dark">https://www.trello.com</a></li>
@@ -212,15 +405,7 @@
         <li><a href="#" class="text_dark">https://chat.openai.com</a></li>
         </ul>
       </div>
-      <div class="col-6 col-md-3">
-        <h6 class="fw-bold text-uppercase">Dominios</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white-50">Buscar</a></li>
-          <li><a href="#" class="text-white-50">Transferir</a></li>
-          <li><a href="#" class="text-white-50">Gratis</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-4">
         <h6 class="fw-bold text-uppercase">Soporte</h6>
         <ul class="list-unstyled">
           <li><a href="#" class="text-white-50">Tutoriales</a></li>
@@ -228,16 +413,22 @@
           <li><a href="#" class="text-white-50">Reportar Abuso</a></li>
         </ul>
       </div>
-      <div class="col-6 col-md-3">
+      <div class="col-6 col-md-4">
         <h6 class="fw-bold text-uppercase">Síguenos</h6>
-        <a href="#" class="text-white-50 me-2"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-white-50 me-2"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="text-white-50 me-2"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-facebook">
+            <img src="Pics/facer.png" alt="Herramienta tecnológica" class="img-fluid custom-image2   tool-card2">
+        </i></a>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-instagram">
+            <img src="Pics/ins.png" alt="Herramienta tecnológica" class="img-fluid custom-image2   tool-card2">
+        </i></a>
+        <a href="#" class="text-white-50 me-2"><i class="bi bi-youtube">
+            <img src="Pics/x.webp" alt="Herramienta tecnológica" class="img-fluid custom-image2  tool-card2">
+        </i></a>
       </div>
     </div>
     <hr class="border-secondary">
     <div class="d-md-flex justify-content-between text-center text-md-start small">
-      <div>&copy; 2025 Blog Educativo - Todos los derechos reservados</div>
+      <div>&copy; 2025 Blog Educativo - Universidad de Cundinamarca - Colombia - Todos los derechos reservados</div>
     </div>
   </div>
 </footer>
